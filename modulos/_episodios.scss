@@ -1,0 +1,76 @@
+@import "./variables";
+
+//Estilos espisodios podcast//
+.episodios {
+    display: flex;
+    flex-flow: column wrap;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    transform: skew(0, -6deg);
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.titulo-episodios {
+    color: $color-episonoved;
+    transform: skewY(6deg);
+    overflow: hidden;
+    width: 100%;
+}
+.contenido-episodios {
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    flex-grow: 1;
+    transform: skewY(6deg);
+}
+.spotify-frame {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    justify-content: center;
+    .iframe {
+        overflow: hidden;
+        justify-content: center;
+        height: 225px;
+        width: 298px;
+        align-items: center;
+        margin-bottom: -50px;
+    }
+}
+//Desktop view//
+@media (min-width: 768px) {
+    #episodios {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: auto;
+        .titulo-episodios {
+            width: 100%;
+            margin-left: 10%;
+        }
+        .contenido-episodios {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            height: auto;
+            width: 100%;
+            margin-left: 0%;
+            .spotify-frame {
+                width: 20%;
+                &:first-child {
+                    padding-left: 5%;
+                }
+                .iframe {
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    flex-grow: 1;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

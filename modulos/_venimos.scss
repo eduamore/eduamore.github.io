@@ -1,0 +1,51 @@
+//Estilos de donde venimos//
+.venimos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: auto;
+    margin-bottom: 54px;
+    margin-top: -90px;
+    margin-left: 16px;
+    justify-content: center;
+}
+.img-phone {
+    height: 519px;
+    width: 360px;
+    z-index: 1;
+}
+.dedonde {
+    margin-top: 17px;
+    width: 288px;
+    p {
+        display: inline-block;
+        margin-top: 11px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+}
+//Desktop view//
+@media (min-width: 768px) {
+    .venimos {
+        display: inline flex;
+        flex-flow: row nowrap;
+        margin-bottom: 200px;
+        .img-phone {
+            display: flex;
+            margin-left: 10%;
+        }
+        .dedonde {
+            p {
+                margin-bottom: 45px;
+                align-items: center;
+                justify-content: space-around;
+                width: auto;
+                height: 204;
+                margin-left: 0%;
+            }
+        }
+    }
+}

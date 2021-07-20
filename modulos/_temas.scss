@@ -1,0 +1,77 @@
+//Estilos temas//
+.temas {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    & > h2 {
+        font-size: 36px;
+        margin-left: 16px;
+    }
+}
+.especialidades {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin-left: 16px;
+}
+.subtema {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 42px;
+    font-size: 24px;
+    h3 {
+        color:$color-texto;
+        font-family: IBMPlexSans-SemiBold;
+        font-size: 24px;
+        text-align: center;
+        width: 288px;
+        height: 32px;
+        margin-bottom: 10px;
+    }
+    icon {
+        width: 104px;
+        height: 104px;
+    }
+}
+//Desktop view//
+@media (min-width: 768px) {
+    .temas {
+        margin-bottom: 34px;
+        margin-right: 100px;
+        margin-top: 64px;
+        h2,
+        .especialidades {
+            display: flex;
+            flex-flow: row nowrap;
+            font-size: 48px;
+            .subtemas {
+                margin-top: 69px;
+                img {
+                    width: 104px;
+                    height: 104px;
+                }
+            }
+        }
+        .subtemas {
+            display: flex;
+            flex-direction: row nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 32px;
+            width: 220px;
+            font-size: 24px;
+            img {
+                width: auto;
+                height: auto;
+                max-width: 104px;
+                max-height: 104px;
+            }
+        }
+    }
+}

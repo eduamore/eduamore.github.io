@@ -1,0 +1,29 @@
+@import "./banner";
+@import "./episodios";
+@import "./footer";
+@import "./invitadas";
+@import "./menu";
+@import "./temas";
+@import "./variables";
+@import "./venimos";
+
+//Estilos general//
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "IBM Plex Mono", monospace;
+    justify-content: center;
+    width: 110%;
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    font-size: 36px;
+    font-family: IBMPlexSans;
+}
+p {
+    font-family: IBM Plex Mono;
+}
