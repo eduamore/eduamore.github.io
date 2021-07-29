@@ -186,6 +186,8 @@
 
 .spotify-frame .iframe {
   overflow: hidden;
+  border: 0px;
+  background-color: transparent;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
