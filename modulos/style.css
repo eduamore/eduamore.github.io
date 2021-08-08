@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200&family=Roboto:wght@300&display=swap");
 .contenido_principal {
-  width: 100%;
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,16 +18,16 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
   width: 100%;
-  height: 303px;
-  margin-top: 73px;
-  margin-bottom: 10px;
+  height: 203px;
+  margin-top: 6%;
+  margin-bottom: 3%;
   margin-left: 16px;
   color: #060a24;
 }
@@ -45,7 +45,7 @@
   height: 66px;
   text-align: left;
   width: 100%;
-  margin-top: 29px;
+  margin-top: 3%;
 }
 
 .contenido_principal .intro {
@@ -57,12 +57,13 @@
   display: flex;
   font-size: 14px;
   height: 66px;
-  margin-bottom: 16px;
+  margin-bottom: 2%;
   margin-right: 16px;
-  margin-top: 66px;
-  width: 100%;
+  margin-top: 1%;
+  width: 95%;
   text-align: justify;
   letter-spacing: 0;
+  justify-self: center;
 }
 
 .contenido_principal .bann .boton {
@@ -133,6 +134,7 @@
   -webkit-transform: skew(0, -6deg);
           transform: skew(0, -6deg);
   width: 100%;
+  margin-bottom: -3%;
   height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -140,8 +142,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 120px;
 }
 
 .titulo-episodios {
@@ -150,6 +150,9 @@
           transform: skewY(6deg);
   overflow: hidden;
   width: 100%;
+  margin-top: 7%;
+  margin-left: 3%;
+  margin-bottom: 3%;
 }
 
 .contenido-episodios {
@@ -166,6 +169,7 @@
           flex-grow: 1;
   -webkit-transform: skewY(6deg);
           transform: skewY(6deg);
+  width: 100%;
 }
 
 .spotify-frame {
@@ -182,6 +186,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: -3%;
 }
 
 .spotify-frame .iframe {
@@ -192,11 +197,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 225px;
-  width: 298px;
+  width: 95%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: -50px;
+  margin-right: 6%;
+  margin-left: 2%;
 }
 
 @media (min-width: 768px) {
@@ -208,12 +214,12 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    width: 100%;
+    width: auto;
     height: auto;
   }
   #episodios .titulo-episodios {
     width: 100%;
-    margin-left: 10%;
+    margin-left: 1%;
   }
   #episodios .contenido-episodios {
     display: -webkit-box;
@@ -223,11 +229,12 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: auto;
     width: 100%;
+    margin-bottom: 5%;
     margin-left: 0%;
   }
   #episodios .contenido-episodios .spotify-frame {
@@ -319,10 +326,6 @@
 
 .footer-contenedor .pie-derechos {
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
 }
 
 .footer-contenedor .pie-derechos > p {
@@ -359,6 +362,9 @@
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     margin-top: 3%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .footer-contenedor .pie-derechos > p {
     margin-left: 0%;
@@ -374,6 +380,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .conoce > h2 {
@@ -411,8 +418,8 @@
 }
 
 .conoce .fotogaleria {
-  width: 320px;
-  height: 243px;
+  width: 100%;
+  height: auto;
   margin: 0px;
   padding: 0px;
   -webkit-box-pack: center;
@@ -422,7 +429,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: -5px;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -492,14 +498,13 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  margin-right: 19px;
   cursor: pointer;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
   height: 44px;
-  position: fixed;
+  position: relative;
   z-index: 100;
 }
 
@@ -515,15 +520,15 @@
   position: absolute;
   top: 44px;
   left: 0;
-  width: 280px;
+  width: 98%;
   height: 224px;
   background: #0000ec;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0s;
+  transition: all 0s;
   -webkit-transform: translateX(-110%);
           transform: translateX(-110%);
   z-index: 100;
-  margin-left: 15px;
+  margin-left: 0px;
   margin-right: 16px;
 }
 
@@ -575,6 +580,7 @@
 }
 
 .botonicon {
+  margin-right: 5%;
   float: right;
 }
 
@@ -597,7 +603,7 @@
     height: 80px;
   }
   .header .contmenu {
-    width: 98%;
+    width: 100%;
   }
   .header .contmenu .fa-bars {
     display: none;
@@ -616,6 +622,7 @@
     width: 100%;
     height: 20px;
     font-size: 16px;
+    margin-top: -2%;
     background-color: transparent;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -706,7 +713,8 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 42px;
+  margin-bottom: 3%;
+  margin-top: 3%;
   font-size: 24px;
 }
 
@@ -790,11 +798,11 @@
           align-items: center;
   height: auto;
   margin-bottom: 54px;
-  margin-top: -90px;
-  margin-left: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: -10%;
+  margin-left: 1%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .img-phone {
@@ -805,7 +813,9 @@
 
 .dedonde {
   margin-top: 17px;
-  width: 288px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 100%;
 }
 
 .dedonde p {
@@ -829,6 +839,7 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    margin-top: -3%;
     margin-bottom: 200px;
   }
   .venimos .img-phone {
@@ -846,7 +857,8 @@
         justify-content: space-around;
     width: auto;
     height: 204;
-    margin-left: 0%;
+    margin-left: 0px;
+    margin-right: 3%;
   }
 }
 
@@ -862,7 +874,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 110%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
 }

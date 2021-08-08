@@ -5,9 +5,9 @@
     align-items: center;
     height: auto;
     margin-bottom: 54px;
-    margin-top: -90px;
-    margin-left: 16px;
-    justify-content: center;
+    margin-top: -10%;
+    margin-left: 1%;
+    justify-content: space-evenly;
 }
 .img-phone {
     height: 519px;
@@ -16,7 +16,9 @@
 }
 .dedonde {
     margin-top: 17px;
-    width: 288px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
     p {
         display: inline-block;
         margin-top: 11px;
@@ -25,15 +27,16 @@
         height: auto;
         margin-bottom: 30px;
         font-size: 14px;
-    }
+            }
 }
 //Desktop view//
 @media (min-width: 768px) {
     .venimos {
         display: inline flex;
         flex-flow: row nowrap;
+        margin-top:-3%;
         margin-bottom: 200px;
-        .img-phone {
+       .img-phone {
             display: flex;
             margin-left: 10%;
         }
@@ -41,10 +44,11 @@
             p {
                 margin-bottom: 45px;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: space-around;               
                 width: auto;
                 height: 204;
-                margin-left: 0%;
+                margin-left: 0px;
+                margin-right: 3%;
             }
         }
     }
